@@ -1,0 +1,47 @@
+{
+  "name": "agy-ask-extension",
+  "displayName": "Antigravity Ask User Question",
+  "description": "Interactive question UI for Antigravity Agents",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished",
+    "onView:agyAskView"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "agyAskContainer",
+          "title": "Ask Agy",
+          "icon": "media/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "agyAskContainer": [
+        {
+          "id": "agyAskView",
+          "name": "Questions",
+          "type": "webview"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.90.0",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
