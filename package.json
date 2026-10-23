@@ -1,13 +1,30 @@
 {
   "name": "agy-ask-extension",
   "displayName": "Antigravity Ask User Question",
-  "description": "Interactive question UI for Antigravity Agents",
+  "description": "Show an AI agent's multiple-choice question in the sidebar and write the chosen answer to a file in the workspace.",
   "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ycookiey/agy-ask-question.git"
+  },
   "engines": {
     "vscode": "^1.90.0"
   },
   "categories": [
     "Other"
+  ],
+  "keywords": [
+    "antigravity",
+    "ai",
+    "agent",
+    "question",
+    "human-in-the-loop"
+  ],
+  "files": [
+    "out/**/*.js",
+    "media",
+    "LICENSE"
   ],
   "activationEvents": [
     "onStartupFinished",
