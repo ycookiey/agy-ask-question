@@ -58,15 +58,6 @@ antigravity --uninstall-extension undefined_publisher.agy-ask-extension
 
 Then delete the `.agy/` folders from your workspaces.
 
-## Build
-
-```sh
-npm ci
-npm run compile
-```
-
-The compiled files go to `out/`.
-
 ## License
 
 [MIT](LICENSE)
