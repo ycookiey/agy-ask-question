@@ -10,7 +10,6 @@ export function activate(context: vscode.ExtensionContext) {
 		vscode.window.registerWebviewViewProvider(QuestionProvider.viewType, provider)
 	);
 
-	// ファイル監視のセットアップ (エージェント連携用)
 	setupFileWatcher(provider);
 }
 

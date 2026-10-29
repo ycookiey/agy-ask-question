@@ -40,7 +40,6 @@ export class QuestionProvider implements vscode.WebviewViewProvider {
 	}
 
 	private async saveAnswer(answer: any) {
-		// ワークスペースの .agy/answer.json に書き込む
 		if (!vscode.workspace.workspaceFolders) { return; }
 		
 		const rootPath = vscode.workspace.workspaceFolders[0].uri;
